@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div id="Display"><p id="dis">0</p></div>
+    </div>
+
+    <div class="row padd-ac-backspace-x">
+        <div class="col-xs-3"><button class="btn btn-lg btn-danger bg-color" type="button" onclick="all_clear()">AC</button></div>
+        <div class="col-xs-6"><a role="button" href="#" class="btn btn-lg btn-success">&lt; Backspace</a></div>
+        <div class="col-xs-3"><button class="btn btn-lg btn-danger" type="button">X</button></div>
+    </div>
+
+    <div class="row padd-one-zero">
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('1')">1</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('2')">2</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('3')">3</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add()">+</button></div>
+    </div>
+
+    <div class="row padd-one-zero">
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('4')">4</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('5')">5</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('6')">6</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="minus()">-</button></div>
+    </div>
+
+    <div class="row padd-one-zero">
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('7')">7</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('8')">8</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('9')">9</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="multi()">x</button></div>
+    </div>
+
+    <div class="row padd-one-zero">
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('.')">.</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="add_number('0')">0</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="ans()">=</button></div>
+        <div class="col-xs-3"><button type="button" class="btn btn-lg btn-default" onclick="divition()">/</button></div>
+    </div>
+
+    <div class="row bottom-title">
+        <div class="col-xs-8">Calculator</div>
+        <div class="col-xs-4"><div id="toorel">&copy; toorel</div></div>
+    </div>
+
+</div>
+
+
+
+<!--  js  -->
+<script src="js/bootstrap.js"></script>
+<script src="js/npm.js"></script>
+<script src="js/js.js"></script>
+
+</body>
+</html>
